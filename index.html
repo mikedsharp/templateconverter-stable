@@ -70,9 +70,6 @@
         <ul>
             <li><a href="#tabs-1">Raw HTML</a></li>
             <li><a href="#tabs-2">Converted Template (Body + Style)</a></li>
-       <!--     <li><a href="#tabs-3">Style</a></li>-->
-           <!-- <li><a href="#tabs-4">Salutation</a></li>-->
-            <!--<li><a href="#tabs-4">View/Edit Links</a></li>-->
         </ul>
 
         <div id="tabs-1" class="tabcontent">
@@ -80,55 +77,17 @@
             <div id="accordion">
                 <h3>Converter Config</h3>
                 <div style="overflow:auto !important;">
-                    <!--  <h4>Encode Body?</h4>
-                    <div id="radioEncodeBody">
-                        <input type="radio" id="encodeBodyYes" name="radioEncodeBody"><label for="encodeBodyYes">Yes</label>
-                        <input type="radio" id="encodeBodyNo" name="radioEncodeBody" checked="checked"><label for="encodeBodyNo">No</label>
-                    </div>
-                    <h4>Encode Style?</h4>
-                    <div id="radioEncodeStyle">
-                        <input type="radio" id="encodeStyleYes" name="radioEncodeStyle"><label for="encodeStyleYes">Yes</label>
-                        <input type="radio" id="encodeStyleNo" name="radioEncodeStyle" checked="checked"><label for="encodeStyleNo">No</label>
-                    </div>-->
-
-                    <!--  <h4>Use Custom Email Salutation? </h4>
-                    <div id="radioUseCustomSalutation">
-                        <input type="radio" id="radioUseCustomSalutationYes" name="radioUseCustomSalutation"><label for="radioUseCustomSalutationYes">Yes</label>
-                        <input type="radio" id="radioUseCustomSalutationNo" name="radioUseCustomSalutation" checked="checked"><label for="radioUseCustomSalutationNo">No</label>
-                    </div>
-                    <textarea id="customSalutationText" cols="3">
-
-                    </textarea>-->
-
-                   <!-- <h4>Wrap Style in style tags and escape out @ symbols?</h4>
-                    <div id="radioEscapeAt">
-                        <input type="radio" id="radioEscapeAtYes" name="radioEscapeAt" /><label for="radioEscapeAtYes">Yes</label>
-                        <input type="radio" id="radioEscapeAtNo" name="radioEscapeAt" checked="checked" /><label for="radioEscapeAtNo">No</label>
-                    </div>-->
-
                     <h4>Downcase Fields? (You may want to do this when the v1 template uses capitals in item and session placeholders)</h4>
                     <div id="radioDowncasePlaceholders">
                         <input type="radio" id="downcasePlaceholdersYes" name="radioDowncasePlaceholders" /><label for="downcasePlaceholdersYes">Yes</label>
                         <input type="radio" id="downcasePlaceholdersNo" name="radioDowncasePlaceholders" checked="checked" /><label for="downcasePlaceholdersNo">No</label>
                     </div>
 
- <!--                   <div>
-                        <h4>Override Currency Symbol (Not currently implemented in V2) to use session:cur?</h4>
-                        <h6>* If you select no, the converter will default to showing 3 letter currency code e.g. GBP. </h6>
-                    </div>
-
-                    <div id="radioOverrideCurrency">
-                        <input type="radio" id="overrideCurrencyNo" name="radioOverrideCurrency" /><label for="overrideCurrencyNo">No Override</label>
-                        <input type="radio" id="overrideCurrencyYes" name="radioOverrideCurrency" checked="checked" /><label for="overrideCurrencyYes">Session:cur</label>
-                        <input type="radio" id="overrideCurrencyCustom" name="radioOverrideCurrency" /><label for="overrideCurrencyCustom">Custom</label>
-                    </div>
-                    <h4>Custom Currency Symbol (if custom currency symbol desired)</h4>
-                    <input type="text" id="currencySymbolValue" />-->
                     <h4>Image Replace URL (From V1 Portal)</h4>
                     <div style="display:inline-block;clear:both;margin-bottom:10px;">
                          <input type="text" id="imageReplaceUrl" />
                     </div>
-                   
+
                 </div>
                 <h2>Add V1 Template
                 </h2>
@@ -148,73 +107,7 @@
             <textarea id="bodyArea"></textarea>
 
         </div>
-       <!-- <div id="tabs-3" class="dip">
-            <h3>Style (Extracted from 'Head')</h3>
-            <textarea id="styleArea" class=""></textarea>
-        </div>-->
-     <!--   <div id="tabs-4" class="dip">
-            <h3>Custom Salutation Editor</h3>
 
-            <h4>Use custom salutation?</h4>
-            <div id="radioUseCustomSalutation">
-                <input type="radio" id="useCustomSalutationYes" name="radioUseCustomSalutation" /><label for="useCustomSalutationYes">Yes</label>
-                <input type="radio" id="useCustomSalutationNo" name="radioUseCustomSalutation" checked="checked" /><label for="useCustomSalutationNo">No</label>
-            </div>
-
-            <div id="fallbackConfigSection" class="ui-widget-header ui-corner-all">
-                <h5>Fallback Salutation (Do not put placeholders in here)</h5>
-                <div class="fallbackItemWrapper">
-                    <textarea id="fallbackSalutationArea" class="salutationArea">
-
-                </textarea>
-
-                </div>
-            </div>
-            <div id="placeholderSection" class="ui-widget-header ui-corner-all">
-                <h5>V2 Placeholders</h5>
-                <ul>
-                    <li>
-                        <button>Customer.FirstName</button></li>
-                    <li>
-                        <button>Customer.LastName</button></li>
-                    <li>
-                        <button>Customer.Email</button></li>
-                    <li>
-                        <button>Customer.Telephone</button></li>
-                </ul>
-            </div>
-            
-
-            <ul id="salutationList">
-                <li>
-                    <div class="ui-widget-header ui-corner-all salutationSection">
-                        <textarea class="salutationArea"></textarea>
-                        <ul>
-                            <li>
-                                <button class="salutationRaisePriority"><span class="ui-icon ui-icon-arrowthick-1-n"></span></button>
-                            </li>
-                            <li>
-                                <button class="salutationLowerPriority"><span class="ui-icon ui-icon-arrowthick-1-s"></span></button>
-                            </li>
-
-                        </ul>
-                        <button class="removeSalutationOption"><span class="">Remove</span></button>
-                    </div>
-                </li>
-            </ul>
-
-            <div id="addSalutationSection" class="">
-                <button id="addSaluation">
-                    &nbsp;&nbsp;<span class="ui-icon ui-icon-plusthick" style="float: left; margin-top: 4px; display: inline-block;" align="middle"></span><span>Add New Salutation</span>
-
-                </button>
-            </div>
-
-
-        </div>-->
-        <!--<div id="tabs-4" class="dip">
-            <h3> Link Editor</h3>
-        </div>-->
 
     </div>
 
